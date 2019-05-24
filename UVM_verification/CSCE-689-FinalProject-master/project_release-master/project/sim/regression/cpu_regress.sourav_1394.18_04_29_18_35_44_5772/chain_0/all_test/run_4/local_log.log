@@ -1,0 +1,58 @@
+Setting timeout to: 13000000
+vm_run_with_timeout.pl: Running command: 'cd /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim ; irun -f run_vm.f +UVM_TESTNAME=cache_reads_random -define TEST1'
+irun: 15.20-s022: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Writing initial vsof to /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/.SRvSof/ncvlog_2018_04_29_18_37_19.vsof
+file: ../uvm/top.sv
+`include "mesi_state.sv"
+                       |
+ncvlog: *E,COFILX (../test/test_lib.svh,11|23): cannot open include file 'mesi_state.sv'.
+(`include file: ../test/test_lib.svh line 11, file: ../uvm/top.sv line 41)
+	module worklib.top:sv
+		errors: 1, warnings: 0
+  Wrote eManager metrics information to /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/cov_work/scope/test/ies.vsof
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+Error: run 4 exited with exit status: 1
+STOPPING RUN!
+vm_srmp: *N,START: vManager Single Run Metrics Processor...
+
+--------------------------------------------------------------------
+-- Phase: Reading Input vSofs
+--------------------------------------------------------------------
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/ncvlog_2018_04_29_18_37_19.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/ncvlog_2018_04_29_18_37_19.vsof
+
+--------------------------------------------------------------------
+-- Phase: User Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl ius.flt shell.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ius.flt
+    2. shell.flt
+vm_scan.pl: total of 2 patterns extracted.
+Wrote ./.vm_scan.hera3.ece.tamu.edu.20446.1/vm_scan_29_18_37_22.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.hera3.ece.tamu.edu.20446.1/vm_scan_29_18_37_22.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.hera3.ece.tamu.edu.20446.1/vm_scan_29_18_37_22.vsof
+
+--------------------------------------------------------------------
+-- Phase: Complementary Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl  /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/ovm_sv_lib.flt /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/vm.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ovm_sv_lib.flt
+    2. vm.flt
+vm_scan.pl: total of 0 patterns extracted.
+Wrote ./.vm_scan.hera3.ece.tamu.edu.20446.2/vm_scan_29_18_37_22.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.hera3.ece.tamu.edu.20446.2/vm_scan_29_18_37_22.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.hera3.ece.tamu.edu.20446.2/vm_scan_29_18_37_22.vsof
+
+--------------------------------------------------------------------
+-- Phase: Writing Single Run vSof
+--------------------------------------------------------------------
+vm_srmp: *N,WRITE: Writing vSof ${BRUN_RUN_DIR}/local_vsof.txt
+vm_srmp: *N,COMPLETE: vManager Single Run Metrics Processor completed successfully

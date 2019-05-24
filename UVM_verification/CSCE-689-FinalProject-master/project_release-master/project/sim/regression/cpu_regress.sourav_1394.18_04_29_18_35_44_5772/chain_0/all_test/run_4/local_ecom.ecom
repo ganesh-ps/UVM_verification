@@ -1,0 +1,5 @@
+
+files.write_string_list(".log_file",{get_log_name()});
+set_config(run, exit_on, all)
+set_config(gen, seed, random)
+test

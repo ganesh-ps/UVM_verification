@@ -1,0 +1,45 @@
+//
+// Written by NGen Library ver.1.2.6 2018-04-29 18:36:14
+//
+
+header vsof {
+        runner_version : <text>2</text> ;
+        version : <text>3</text> ;
+        vmanager_version : <text>10.20.xxx-yyy</text> ;
+}
+
+session_output "test" {
+        original_session_dir : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_1/cov_work/scope</text>;
+        runs_in_session : 1;
+        session_description : <text>Single run of 'test'</text>;
+        session_dir : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_1/cov_work/scope</text>;
+        session_end_time : <text>1525044974</text>;
+        session_name : <text>test</text>;
+        session_owner : <text>sourav_1394</text>;
+        session_start_time : <text>1525044974</text>;
+        session_status : <text>post_session_script_done</text>;
+        session_type : <text>single_run</text>;
+        top_dir : <text>$ATTR(session_dir)/..</text>;
+}
+
+run 1 {
+        cpu_time : 52;
+        end_time : <text>1525044974</text>;
+        engine : <text>ncsim</text>;
+        full_title : <text>test</text>;
+        log_file : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/irun.log</text>;
+        parent_run : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/cpu_regress.vsof:cpu_regress/all_test/test1@0</text>;
+        run_dir : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_1/cov_work/scope/test</text>;
+        run_id : 1;
+        run_type : <text>simulation</text>;
+        simulator : <text>ncvlog</text>;
+        system_time : 35;
+        test_name : <text>test</text>;
+        user_time : 16;
+
+        filter "ncvlog" {
+                filter_files : <text>ius.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>ncvlog</text>;
+                log_file : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/irun.log</text>;
+        }
+}

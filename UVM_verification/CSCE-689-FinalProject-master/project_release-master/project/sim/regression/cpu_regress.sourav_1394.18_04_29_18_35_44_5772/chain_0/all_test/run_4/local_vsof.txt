@@ -1,0 +1,71 @@
+extend 4 {
+	cpu_time: 580;
+	user_time: 360;
+	system_time: 220;
+	simulation_time: 0;
+failure run {
+	tool : <text>brun</text>;
+	severity : <text>critical</text>;
+	kind : <text>run</text>;
+	description : <text> run 4 script exited with exit status 1. See
+                      /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log for details.
+                      </text>;
+	reference : <text>1@/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log</text>;
+}
+}
+
+extend 4 {
+        end_time : <text>1525045042</text>;
+        engine : <text>ncsim</text>;
+        log_file : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/irun.log<__SEPARATOR__>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log<__SEPARATOR__>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log</text>;
+        parent_run : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/cpu_regress.vsof:cpu_regress/all_test/test1@3</text>;
+        run_id : 4;
+        run_type : <text>simulation</text>;
+
+        filter "ncvlog" {
+                filter_files : <text>ius.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>ncvlog</text>;
+                log_file : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/irun.log</text>;
+        }
+
+        filter "ncvlog" {
+                filter_files : <text>ius.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>ncvlog</text>;
+        }
+
+        failure F0 {
+                description : <text>An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).</text>;
+                failure_id : <text>F0</text>;
+                kind : <text>VLGERR</text>;
+                reference : <text>13@/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>error</text>;
+                tool : <text>irun</text>;
+        }
+
+        failure F1 {
+                description : <text>cannot open include file 'mesi_state.sv'.</text>;
+                failure_id : <text>F1</text>;
+                kind : <text>COFILX</text>;
+                module : <text>../test/test_lib.svh,11|23</text>;
+                reference : <text>8@/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>error</text>;
+                tool : <text>ncvlog</text>;
+        }
+
+        filter "vm_scan" {
+                filter_files : <text>/softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/ius.flt /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/shell.flt</text>;
+                filter_id : <text>vm_scan</text>;
+                log_file : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log</text>;
+        }
+
+        filter "vm_scan" {
+                filter_files : <text>/softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/ovm_sv_lib.flt /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/uvm.flt /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/vm.flt</text>;
+                filter_id : <text>vm_scan</text>;
+                log_file : <text>/home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_4/local_log.log</text>;
+        }
+}
+extend 4 {
+	job_status : <text>finished</text>;
+	end_time : <text>1525045043</text>;
+}
+

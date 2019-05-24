@@ -1,0 +1,43 @@
+vm_srmp: *N,START: vManager Single Run Metrics Processor...
+
+--------------------------------------------------------------------
+-- Phase: Reading Input vSofs
+--------------------------------------------------------------------
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/ncvlog_2018_04_29_18_36_38.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/ncvlog_2018_04_29_18_36_38.vsof
+
+--------------------------------------------------------------------
+-- Phase: User Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl ius.flt shell.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ius.flt
+    2. shell.flt
+vm_scan.pl: total of 2 patterns extracted.
+Wrote ./.vm_scan.hera3.ece.tamu.edu.36049.1/vm_scan_29_18_36_41.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.hera3.ece.tamu.edu.36049.1/vm_scan_29_18_36_41.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.hera3.ece.tamu.edu.36049.1/vm_scan_29_18_36_41.vsof
+
+--------------------------------------------------------------------
+-- Phase: Complementary Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl  /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/ovm_sv_lib.flt /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/vm.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ovm_sv_lib.flt
+    2. vm.flt
+vm_scan.pl: total of 0 patterns extracted.
+Wrote ./.vm_scan.hera3.ece.tamu.edu.36049.2/vm_scan_29_18_36_42.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.hera3.ece.tamu.edu.36049.2/vm_scan_29_18_36_42.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.hera3.ece.tamu.edu.36049.2/vm_scan_29_18_36_42.vsof
+
+--------------------------------------------------------------------
+-- Phase: Writing Single Run vSof
+--------------------------------------------------------------------
+vm_srmp: *N,WRITE: Writing vSof ${BRUN_RUN_DIR}/local_vsof.txt
+vm_srmp: *N,COMPLETE: vManager Single Run Metrics Processor completed successfully

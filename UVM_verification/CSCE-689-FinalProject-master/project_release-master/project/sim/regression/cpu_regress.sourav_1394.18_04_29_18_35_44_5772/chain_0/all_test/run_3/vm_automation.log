@@ -1,0 +1,6 @@
+Apr 29, 2018 6:37:08 PM java_util_logging_Logger$info$1 call
+INFO: Starting automation script
+Apr 29, 2018 6:37:09 PM java_util_logging_Logger$info$1 call
+INFO: ### Automation connection details: hera.ece.tamu.edu:8080:vmgr:session-id=197133 , wait:false
+Apr 29, 2018 6:37:09 PM java_util_logging_Logger$info$1 call
+INFO: nothing todo

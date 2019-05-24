@@ -1,0 +1,158 @@
+Setting timeout to: 13000000
+vm_run_with_timeout.pl: Running command: 'cd /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim ; irun -f run_vm.f +UVM_TESTNAME=cache_reads_random -define TEST1'
+irun: 15.20-s022: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /softwares/Linux/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv
+Writing initial vsof to /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_1/.SRvSof/ncvlog_2018_04_29_18_36_14.vsof
+file: ../design/common/addr_segregator_proc.sv
+	module worklib.addr_segregator_proc:sv
+		errors: 0, warnings: 0
+file: ../design/lv2/lru_block_lv2.sv
+	module worklib.lru_block_lv2:sv
+		errors: 0, warnings: 0
+file: ../design/common/blk_hit_proc_md.sv
+	module worklib.blk_hit_proc_md:sv
+		errors: 0, warnings: 0
+file: ../design/common/access_blk_proc_md.sv
+	module worklib.access_blk_proc_md:sv
+		errors: 0, warnings: 0
+file: ../design/common/free_blk_md.sv
+	module worklib.free_blk_md:sv
+		errors: 0, warnings: 0
+file: ../design/common/blk_to_be_accessed_md.sv
+	module worklib.blk_to_be_accessed_md:sv
+		errors: 0, warnings: 0
+file: ../design/lv2/main_func_lv2.sv
+	module worklib.main_func_lv2:sv
+		errors: 0, warnings: 0
+file: ../design/lv2/cache_block_lv2.sv
+	module worklib.cache_block_lv2:sv
+		errors: 0, warnings: 0
+file: ../design/lv2/cache_controller_lv2.sv
+	module worklib.cache_controller_lv2:sv
+		errors: 0, warnings: 0
+file: ../design/lv2/cache_wrapper_lv2.sv
+	module worklib.cache_wrapper_lv2:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/access_blk_snoop_md.sv
+	module worklib.access_blk_snoop_md:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/addr_segregator_snoop.sv
+	module worklib.addr_segregator_snoop:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/blk_hit_snoop_md.sv
+	module worklib.blk_hit_snoop_md:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/blk_to_be_accessed_snoop_md.sv
+	module worklib.blk_to_be_accessed_snoop_md:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/lru_block_lv1.sv
+	module worklib.lru_block_lv1:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/mesi_fsm_lv1.sv
+	module worklib.mesi_fsm_lv1:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/main_func_lv1_il.sv
+	module worklib.main_func_lv1_il:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/main_func_lv1_dl.sv
+	module worklib.main_func_lv1_dl:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_controller_lv1_il.sv
+	module worklib.cache_controller_lv1_il:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_controller_lv1_dl.sv
+	module worklib.cache_controller_lv1_dl:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_block_lv1_il.sv
+	module worklib.cache_block_lv1_il:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_block_lv1_dl.sv
+	module worklib.cache_block_lv1_dl:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_wrapper_lv1_il.sv
+	module worklib.cache_wrapper_lv1_il:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_wrapper_lv1_dl.sv
+	module worklib.cache_wrapper_lv1_dl:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_lv1_unicore.sv
+	module worklib.cache_lv1_unicore:sv
+		errors: 0, warnings: 0
+file: ../design/lv1/cache_lv1_multicore.sv
+	module worklib.cache_lv1_multicore:sv
+		errors: 0, warnings: 0
+file: ../design/cache_top.sv
+	module worklib.cache_top:sv
+		errors: 0, warnings: 0
+file: ../gold/memory.sv
+	module worklib.memory:sv
+		errors: 0, warnings: 0
+file: ../gold/lrs_arbiter.sv
+	module worklib.lrs_arbiter:sv
+		errors: 0, warnings: 0
+file: ../uvm/cpu_lv1_interface.sv
+	interface worklib.cpu_lv1_interface:sv
+		errors: 0, warnings: 0
+file: ../uvm/system_bus_interface.sv
+	interface worklib.system_bus_interface:sv
+		errors: 0, warnings: 0
+file: ../uvm/cpu_mesi_lru_interface.sv
+	interface worklib.cpu_mesi_lru_interface:sv
+		errors: 0, warnings: 0
+file: ../uvm/cpu_pkg.sv
+	package worklib.cpu_pkg:sv
+		errors: 0, warnings: 0
+file: ../uvm/top.sv
+`include "mesi_state.sv"
+                       |
+ncvlog: *E,COFILX (../test/test_lib.svh,11|23): cannot open include file 'mesi_state.sv'.
+(`include file: ../test/test_lib.svh line 11, file: ../uvm/top.sv line 41)
+	module worklib.top:sv
+		errors: 1, warnings: 0
+  Wrote eManager metrics information to /home/grads/s/sourav_1394/csce689/CSCE-689-FinalProject/project_release-master/project/sim/regression/cpu_regress.sourav_1394.18_04_29_18_35_44_5772/chain_0/all_test/run_1/cov_work/scope/test/ies.vsof
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+Error: run 1 exited with exit status: 1
+STOPPING RUN!
+vm_srmp: *N,START: vManager Single Run Metrics Processor...
+
+--------------------------------------------------------------------
+-- Phase: Reading Input vSofs
+--------------------------------------------------------------------
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/ncvlog_2018_04_29_18_36_14.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/ncvlog_2018_04_29_18_36_14.vsof
+
+--------------------------------------------------------------------
+-- Phase: User Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl ius.flt shell.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ius.flt
+    2. shell.flt
+vm_scan.pl: total of 2 patterns extracted.
+Wrote ./.vm_scan.hera3.ece.tamu.edu.20179.1/vm_scan_29_18_36_18.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.hera3.ece.tamu.edu.20179.1/vm_scan_29_18_36_18.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.hera3.ece.tamu.edu.20179.1/vm_scan_29_18_36_18.vsof
+
+--------------------------------------------------------------------
+-- Phase: Complementary Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl  /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/ovm_sv_lib.flt /softwares/Linux/cadence/INCISIVE152/tools/vmgr/runner/bin/vm.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ovm_sv_lib.flt
+    2. vm.flt
+vm_scan.pl: total of 0 patterns extracted.
+Wrote ./.vm_scan.hera3.ece.tamu.edu.20179.2/vm_scan_29_18_36_19.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.hera3.ece.tamu.edu.20179.2/vm_scan_29_18_36_19.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.hera3.ece.tamu.edu.20179.2/vm_scan_29_18_36_19.vsof
+
+--------------------------------------------------------------------
+-- Phase: Writing Single Run vSof
+--------------------------------------------------------------------
+vm_srmp: *N,WRITE: Writing vSof ${BRUN_RUN_DIR}/local_vsof.txt
+vm_srmp: *N,COMPLETE: vManager Single Run Metrics Processor completed successfully
